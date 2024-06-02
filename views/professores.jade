@@ -1,0 +1,13 @@
+extends layout
+block content
+    h1= title 
+    table.table 
+        thead 
+            tr 
+                th Nome 
+                th Disciplina
+        tbody
+            each professor in professores 
+                tr 
+                    td= professor.nome 
+                    td= professor.disciplina
